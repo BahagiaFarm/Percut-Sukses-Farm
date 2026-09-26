@@ -92,7 +92,6 @@ e.preventDefault();
 const formData = new FormData(form);
 const data = new URLSearchParams(formData);
 const objData = Object.fromEntries(data);
-const message = formatMessage(objData);
 console.log(objData);
 });
 
