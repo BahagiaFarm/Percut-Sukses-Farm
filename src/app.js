@@ -97,16 +97,7 @@ console.log(objData);
 });
 
 // format pesan whatsapp
-const formatMessage = (obj) => {
-    return `Data Customer
-    Nama: ${obj.name}
-    Email: ${obj.email}
-    No HP: ${obj.phone}
-Data Pesanan
-${JSON.parse(obj.items).map((item) => `${item.name} (${item.quantity} x ${rupaih(item.total)}) \n`)}
-TOTAL: ${rupiah(obj.total)}
-Terima kasih.`;
-};
+
 
 
 // Konversi ke Rupiah
