@@ -103,7 +103,7 @@ const formatMessage = (obj) => {
     Email: ${obj.email}
     No HP: ${obj.phone}
 Data Pesanan
-${JSON.parse(obj.items).map((i) => `${item.name} (${item.quantity} x ${rupaih(item.total)}) \n`)}
+${JSON.parse(obj.items).map((item) => `${item.name} (${item.quantity} x ${rupaih(item.total)}) \n`)}
 TOTAL: ${rupiah(obj.total)}
 Terima kasih.`;
 }
