@@ -72,7 +72,7 @@ document.addEventListener('alpine:init', () => {
 const chekoutButton = document.querySelector('.chekout-button');
 chekoutButton.disabled = true;
 
-const form = document.querySelector('#chekoutForm');
+const form = document.querySelector('#chekoutform');
 form.addEventListener('keyup', function() {
 for (let i = 0; i< form.elements.length; i++) {
     if(form.elements[i].value.length !== 0) {
