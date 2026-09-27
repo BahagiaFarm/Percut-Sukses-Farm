@@ -92,11 +92,21 @@ e.preventDefault();
 const formData = new FormData(form);
 const data = new URLSearchParams(formData);
 const objData = Object.fromEntries(data);
-console.log(objData);
+const message = formatMessage(objData);
+window.open('http://wa.me/6281377481759?text=' + encodeURIComponent(message));
 });
 
 // format pesan whatsapp
-
+const formatMessage = (obj) => {
+    return `Data Customer
+      Nama: ${obj.nama}
+      Email: ${obj.email}
+      No HP: ${obj.phone}
+Data Pesanan
+    ${JSON.parse(obj.items).map((item) => `${item.name} (${item.quantity} x ${rupiah(item.total)}) \n`)}
+TOTAL: ${rupiah(obj.total)}
+Terima kasih.`;
+};
 
 
 // Konversi ke Rupiah
