@@ -99,7 +99,7 @@ window.open('http://wa.me/6281377481759?text=' + encodeURIComponent(message));
 // format pesan whatsapp
 const formatMessage = (obj) => {
     return `Data Customer
-      Nama: ${obj.nama}
+      Nama: ${obj.name}
       Email: ${obj.email}
       No HP: ${obj.phone}
 Data Pesanan
