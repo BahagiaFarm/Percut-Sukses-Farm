@@ -93,7 +93,7 @@ const formData = new FormData(form);
 const data = new URLSearchParams(formData);
 const objData = Object.fromEntries(data);
 const message = formatMessage(objData);
-window.open('http://wa.me/6281377481759?text=' + encodeURIComponent(message));
+window.open('http://wa.me/6281240172046?text=' + encodeURIComponent(message));
 });
 
 // format pesan whatsapp
